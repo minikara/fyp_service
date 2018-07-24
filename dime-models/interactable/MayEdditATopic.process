@@ -1,0 +1,190 @@
+Process _8GRJgYjmEeiiyeL2lGfv2g {
+  modelName "MayEdditATopic"
+  description "MayEdditATopic"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  DataContext _8GUM0YjmEeiiyeL2lGfv2g at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  	ComplexVariable _CW6oMYjnEeiiyeL2lGfv2g at 10,202 size 160,25 {
+  		expanded false
+  		name "topic"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexRead-> _J-v8QYjnEeiiyeL2lGfv2g via (140,563) decorate "" at (0,0) {
+  			id _Yl39sYjnEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexVariable _Cra4kYjnEeiiyeL2lGfv2g at 10,94 size 160,25 {
+  		expanded false
+  		name "concreteuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexRead-> _GxogAYjnEeiiyeL2lGfv2g via (333,157) (333,317) decorate "" at (0,0) {
+  			id _U0sLEYjnEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _8GVa8YjmEeiiyeL2lGfv2g at 350,50 size 100,108 {
+  	ComplexOutputPort __EvFwYjmEeiiyeL2lGfv2g at 5,67 size 90,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _Cra4kYjnEeiiyeL2lGfv2g via (140,125) decorate "" at (0,0) {
+  			id _DG56sYjnEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort __fwN0YjmEeiiyeL2lGfv2g at 5,85 size 90,18 {
+  		name "topicToBeEddit"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexUpdate-> _CW6oMYjnEeiiyeL2lGfv2g via (285,144) (285,200) (140,200) decorate "" at (0,0) {
+  			id _D7_voYjnEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _GxCqIYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _UGLfQIjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _8GWCAYjmEeiiyeL2lGfv2g at 350,720 size 100,65 {
+  	branchName "granted"
+  }
+  
+  ProcessSIB _GxCqIYjnEeiiyeL2lGfv2g at 350,240 size 120,90 {
+  	minorPage false
+  	label "SwitchUserRole"
+  	libraryComponentUID "_gXQhwFZ6Eee7Rq2yitsHaA"
+  	ComplexInputPort _GxogAYjnEeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _Gxq8QYjnEeiiyeL2lGfv2g   {
+  		id _GxrjUYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _GxtYgYjnEeiiyeL2lGfv2g   {
+  		id _Gxt_kYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _Gxxp8YjnEeiiyeL2lGfv2g   {
+  		id _GxyRAYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _Gx3JgYjnEeiiyeL2lGfv2g   {
+  		id _Gx3wkYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _Gxq8QYjnEeiiyeL2lGfv2g at 560,180 size 120,25 {
+  	name "unresolvable"
+  	-ControlFlow-> _Nx76AYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _QfXwoYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _GxtYgYjnEeiiyeL2lGfv2g at 560,240 size 120,50 {
+  	name "admin"
+  	ComplexOutputPort _GxvNsYjnEeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "admin"
+  		isList false
+  		libraryComponentUID "_fhd4sDlvEeelR78gw15slQ"
+  	}
+  	-ControlFlow-> _Nx76AYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _RJ3fIYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _Gxxp8YjnEeiiyeL2lGfv2g at 350,380 size 120,50 {
+  	name "supervisor"
+  	ComplexOutputPort _Gx0GMYjnEeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "supervisor"
+  		isList false
+  		libraryComponentUID "_QCBvMDlvEeelR78gw15slQ"
+  		-ComplexDirectDataFlow-> _J-p1oYjnEeiiyeL2lGfv2g via (330,416) (330,546) decorate "" at (0,0) {
+  			id _YHupIYjnEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _J-WToYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _TZXckYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _Gx3JgYjnEeiiyeL2lGfv2g at 550,310 size 120,50 {
+  	name "student"
+  	ComplexOutputPort _Gx5lwYjnEeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "student"
+  		isList false
+  		libraryComponentUID "_eWeFMDlvEeelR78gw15slQ"
+  	}
+  	-ControlFlow-> _Nx76AYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _RZvuMYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _J-WToYjnEeiiyeL2lGfv2g at 340,470 size 120,108 {
+  	minorPage false
+  	label "IsOwner"
+  	libraryComponentUID "_i5NzUHzpEeeXTvzoCY4ZIA"
+  	ComplexInputPort _J-p1oYjnEeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "supervisor"
+  		isList false
+  		libraryComponentUID "_QCBvMDlvEeelR78gw15slQ"
+  	}
+  	
+  	ComplexInputPort _J-v8QYjnEeiiyeL2lGfv2g at 5,85 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _J-y_kYjnEeiiyeL2lGfv2g   {
+  		id _J-zmoYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _J-2C4YjnEeiiyeL2lGfv2g   {
+  		id _J-2p8YjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _J-y_kYjnEeiiyeL2lGfv2g at 340,630 size 120,25 {
+  	name "owner"
+  	-ControlFlow-> _8GWCAYjmEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _S3qdsYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _J-2C4YjnEeiiyeL2lGfv2g at 560,446 size 120,25 {
+  	name "not owner"
+  	-ControlFlow-> _Nx76AYjnEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _Ru77EYjnEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _Nx76AYjnEeiiyeL2lGfv2g at 760,265 size 100,65 {
+  	branchName "no granted"
+  }
+}

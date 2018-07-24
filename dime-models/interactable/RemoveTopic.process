@@ -1,0 +1,52 @@
+Process _c90QgYtnEeiZQvPf3b5bSg {
+  modelName "RemoveTopic"
+  description "RemoveTopic"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  DataContext _c-NSEYtnEeiZQvPf3b5bSg at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  }
+  
+  StartSIB _c-XqIYtnEeiZQvPf3b5bSg at 350,50 size 100,90 {
+  	ComplexOutputPort _OG8GYYtoEei5c5D5MkB1gQ at 5,67 size 90,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexDirectDataFlow-> _b5zZUItoEei5c5D5MkB1gQ via (340,126) (340,236) decorate "" at (0,0) {
+  			id _dAWxsYtoEei5c5D5MkB1gQ
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _1v6RIYtnEei5c5D5MkB1gQ  decorate "" at (0,0) {
+  		id _elF64YtoEei5c5D5MkB1gQ
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _c-ZfUYtnEeiZQvPf3b5bSg at 320,420 size 100,65 {
+  	branchName "success"
+  }
+  
+  DeleteSIB _1v6RIYtnEei5c5D5MkB1gQ at 570,160 size 120,90 {
+  	force true
+  	label "Delete"
+  	ComplexInputPort _b5zZUItoEei5c5D5MkB1gQ at 5,67 size 110,18 {
+  		name "delete1"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _1wRdgYtnEei5c5D5MkB1gQ   {
+  		id _1wbOgYtnEei5c5D5MkB1gQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _1wRdgYtnEei5c5D5MkB1gQ at 570,260 size 120,25 {
+  	name "deleted"
+  	-ControlFlow-> _c-ZfUYtnEeiZQvPf3b5bSg  decorate "" at (0,0) {
+  		id _d-lUgItoEei5c5D5MkB1gQ
+  		concurrent true
+  	}
+  }
+}

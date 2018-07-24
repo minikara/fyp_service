@@ -1,0 +1,125 @@
+Process _LOj38YjfEeiiyeL2lGfv2g {
+  modelName "CheckUfSupervisor"
+  description "CheckUfSupervisor"
+  dataFlowView true
+  processType Interactable
+  isStateful false
+  DataContext _LOm7QYjfEeiiyeL2lGfv2g at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  	ComplexVariable _Y3MQ0YjfEeiiyeL2lGfv2g at 10,82 size 160,25 {
+  		expanded false
+  		name "concreteuser"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexRead-> _jmdP4YjfEeiiyeL2lGfv2g via (323,323) decorate "" at (0,0) {
+  			id _mA4D4YjfEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _LOoJYYjfEeiiyeL2lGfv2g at 290,50 size 100,90 {
+  	ComplexOutputPort _Oj9GcYjfEeiiyeL2lGfv2g at 5,67 size 90,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexUpdate-> _Y3MQ0YjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  			id _ZVyRUYjfEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _TIclUIjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _q4rgUYjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _LOpXgYjfEeiiyeL2lGfv2g at 630,430 size 100,65 {
+  	branchName "notSupervisor"
+  }
+  
+  RetrieveOfTypeSIB _TIclUIjfEeiiyeL2lGfv2g at 480,50 size 120,65 {
+  	label "Retrieve from Supervisor"
+  	libraryComponentUID "_QCBvMDlvEeelR78gw15slQ"
+  	-BranchConnector-> _TIm9YYjfEeiiyeL2lGfv2g   {
+  		id _TIrO0YjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _TIvgQYjfEeiiyeL2lGfv2g   {
+  		id _TIxVcYjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _TIm9YYjfEeiiyeL2lGfv2g at 480,150 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _TIsc8YjfEeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "retrieved"
+  		isList true
+  		libraryComponentUID "_QCBvMDlvEeelR78gw15slQ"
+  		-ComplexDirectDataFlow-> _jmS30YjfEeiiyeL2lGfv2g via (470,186) (470,306) decorate "" at (0,0) {
+  			id _lUeQ4IjfEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _jmK8AYjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _tJynUIjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _TIvgQYjfEeiiyeL2lGfv2g at 670,60 size 120,25 {
+  	name "none found"
+  	-ControlFlow-> _LOpXgYjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _qUIo0YjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _dkdRMYjfEeiiyeL2lGfv2g at 450,430 size 100,65 {
+  	branchName "Supervisor"
+  }
+  
+  ContainsSIB _jmK8AYjfEeiiyeL2lGfv2g at 530,230 size 120,108 {
+  	label "ConcreteUser List Contains"
+  	libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	ComplexInputPort _jmS30YjfEeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "list"
+  		isList true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	
+  	ComplexInputPort _jmdP4YjfEeiiyeL2lGfv2g at 5,85 size 110,18 {
+  		name "element"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	-BranchConnector-> _jmkkoYjfEeiiyeL2lGfv2g   {
+  		id _jmmZ0YjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _jmo2EYjfEeiiyeL2lGfv2g   {
+  		id _jmrSUYjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _jmkkoYjfEeiiyeL2lGfv2g at 445,377 size 120,25 {
+  	name "yes"
+  	-ControlFlow-> _dkdRMYjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _nZomkIjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _jmo2EYjfEeiiyeL2lGfv2g at 605,377 size 120,25 {
+  	name "no"
+  	-ControlFlow-> _LOpXgYjfEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _nwGl0YjfEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+}
