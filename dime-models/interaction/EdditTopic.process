@@ -1,0 +1,189 @@
+Process _KrHvgYjmEeiiyeL2lGfv2g {
+  modelName "EdditTopicButton"
+  description "EdditTopicButton"
+  dataFlowView true
+  processType Interaction
+  isStateful false
+  DataContext _KrI9oYjmEeiiyeL2lGfv2g at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  	ComplexVariable _iXOGgYjoEeiiyeL2lGfv2g at 10,141 size 160,25 {
+  		expanded false
+  		name "topic"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexRead-> _o2OxUYjoEeiiyeL2lGfv2g via (140,515) decorate "" at (0,0) {
+  			id _tNSRIYjoEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexRead-> _dtXmgYjoEeiiyeL2lGfv2g via (139,307) decorate "" at (0,0) {
+  			id _ucQlsYjoEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _KrKLwYjmEeiiyeL2lGfv2g at 350,50 size 100,108 {
+  	ComplexOutputPort _e5LSUIjoEeiiyeL2lGfv2g at 5,67 size 90,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _dtVxUYjoEeiiyeL2lGfv2g via (330,126) (330,289) decorate "" at (0,0) {
+  			id _v4y1IYjoEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _flbUUYjoEeiiyeL2lGfv2g at 5,85 size 90,18 {
+  		name "topicToBeEddit"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexUpdate-> _iXOGgYjoEeiiyeL2lGfv2g via (139,143) decorate "" at (0,0) {
+  			id _i0USMYjoEeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _dtDdcYjoEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _wotPIYjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _KrLZ4YjmEeiiyeL2lGfv2g at 350,800 size 100,90 {
+  	branchName "success"
+  	ComplexInputPort _QojVQYj8EeiiyeL2lGfv2g at 5,67 size 90,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  }
+  
+  ProcessSIB _dtDdcYjoEeiiyeL2lGfv2g at 340,213 size 120,108 {
+  	minorPage false
+  	label "MayEdditATopic"
+  	libraryComponentUID "_8GRJgYjmEeiiyeL2lGfv2g"
+  	ComplexInputPort _dtVxUYjoEeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	
+  	ComplexInputPort _dtXmgYjoEeiiyeL2lGfv2g at 5,85 size 110,18 {
+  		name "topicToBeEddit"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _dtap0YjoEeiiyeL2lGfv2g   {
+  		id _dtbQ4YjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _dtcfAYjoEeiiyeL2lGfv2g   {
+  		id _dtdGEYjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _dtap0YjoEeiiyeL2lGfv2g at 340,350 size 120,25 {
+  	name "granted"
+  	-ControlFlow-> _o17PUYjoEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _ss3EoYjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _dtcfAYjoEeiiyeL2lGfv2g at 520,254 size 120,25 {
+  	name "no granted"
+  	-ControlFlow-> _x0-N8IjoEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _yin-IYjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _o17PUYjoEeiiyeL2lGfv2g at 350,405 size 120,90 {
+  	name "EditButtonTopic"
+  	majorPage true
+  	label "EditButtonTopic"
+  	libraryComponentUID "_gMT2gYjaEeiiyeL2lGfv2g"
+  	ComplexInputPort _o2OxUYjoEeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _o2R0oYjoEeiiyeL2lGfv2g   {
+  		id _o2SbsYjoEeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _o2R0oYjoEeiiyeL2lGfv2g at 340,510 size 120,50 {
+  	name "Edit topic"
+  	ComplexOutputPort _o2UQ4YjoEeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexDirectDataFlow-> _IuVQsYj8EeiiyeL2lGfv2g via (330,546) (330,666) decorate "" at (0,0) {
+  			id _M1O0oYj8EeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _IkyTIYj8EeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _T1OsoYj8EeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _x0-N8IjoEeiiyeL2lGfv2g at 520,320 size 120,65 {
+  	name "EmptyGUI"
+  	majorPage true
+  	label "EmptyGUI"
+  	libraryComponentUID "_V7NgQFEBEee1RdmfVpvmFg"
+  }
+  
+  GUISIB _IkyTIYj8EeiiyeL2lGfv2g at 350,590 size 120,90 {
+  	name "EditTopic"
+  	majorPage true
+  	label "EditTopic"
+  	libraryComponentUID "_CvOAMYj3EeiiyeL2lGfv2g"
+  	ComplexInputPort _IuVQsYj8EeiiyeL2lGfv2g at 5,67 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _IugP0Yj8EeiiyeL2lGfv2g   {
+  		id _Iuhd8Yj8EeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _IunkkYj8EeiiyeL2lGfv2g   {
+  		id _IuoLoYj8EeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _IugP0Yj8EeiiyeL2lGfv2g at 350,720 size 120,50 {
+  	name "Save changes"
+  	ComplexOutputPort _Iuj6MYj8EeiiyeL2lGfv2g at 5,27 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexDirectDataFlow-> _QojVQYj8EeiiyeL2lGfv2g via (340,756) (340,876) decorate "" at (0,0) {
+  			id _Rf_TkYj8EeiiyeL2lGfv2g
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _KrLZ4YjmEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _UZa-0Yj8EeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+  
+  Branch _IunkkYj8EeiiyeL2lGfv2g at 520,622 size 120,25 {
+  	name "Revert Changes"
+  	-ControlFlow-> _x0-N8IjoEeiiyeL2lGfv2g  decorate "" at (0,0) {
+  		id _XJBYoYj8EeiiyeL2lGfv2g
+  		concurrent true
+  	}
+  }
+}

@@ -1,0 +1,172 @@
+Process _-3eyQYtqEei2ApAXrRVVJw {
+  modelName "SupervisorRemoveTopic"
+  description "SupervisorRemoveTopic"
+  dataFlowView true
+  processType Interaction
+  isStateful false
+  DataContext _-3tbwItqEei2ApAXrRVVJw at 50,50 size 180,800 {
+  	dfViewWorkaround true
+  	ComplexVariable _DUB2EYtrEei2ApAXrRVVJw at 10,110 size 160,25 {
+  		expanded false
+  		name "topic"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexRead-> _FhM4QYtrEei2ApAXrRVVJw via (139,304) decorate "" at (0,0) {
+  			id _W4WxUYtrEei2ApAXrRVVJw
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexRead-> _WqwigYwhEeisc9rTAcpAQg via (140,450) decorate "" at (0,0) {
+  			id _c7s8IYwhEeisc9rTAcpAQg
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _-3wfEYtqEei2ApAXrRVVJw at 350,50 size 100,108 {
+  	ComplexOutputPort _ALn6sYtrEei2ApAXrRVVJw at 5,67 size 90,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexUpdate-> _DUB2EYtrEei2ApAXrRVVJw  decorate "" at (0,0) {
+  			id _V3H90YtrEei2ApAXrRVVJw
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexOutputPort _A--qQYtrEei2ApAXrRVVJw at 5,85 size 90,18 {
+  		name "concreteuser"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		-ComplexDirectDataFlow-> _FhDHQYtrEei2ApAXrRVVJw via (330,144) (330,286) decorate "" at (0,0) {
+  			id _WfzucYtrEei2ApAXrRVVJw
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _FgK9gYtrEei2ApAXrRVVJw  decorate "" at (0,0) {
+  		id _SoMjsYtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _FgK9gYtrEei2ApAXrRVVJw at 340,210 size 120,108 {
+  	minorPage false
+  	label "MayEdditATopic"
+  	libraryComponentUID "_8GRJgYjmEeiiyeL2lGfv2g"
+  	ComplexInputPort _FhDHQYtrEei2ApAXrRVVJw at 5,67 size 110,18 {
+  		name "user"
+  		isList false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  	}
+  	
+  	ComplexInputPort _FhM4QYtrEei2ApAXrRVVJw at 5,85 size 110,18 {
+  		name "topicToBeEddit"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _FhS-4YtrEei2ApAXrRVVJw   {
+  		id _FhVbIYtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _FhbhwYtrEei2ApAXrRVVJw   {
+  		id _Fhcv4YtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  }
+  
+  Branch _FhS-4YtrEei2ApAXrRVVJw at 340,330 size 120,25 {
+  	name "granted"
+  	-ControlFlow-> _WqHpUYwhEeisc9rTAcpAQg  decorate "" at (0,0) {
+  		id _g3NvcYwhEeisc9rTAcpAQg
+  		concurrent true
+  	}
+  }
+  
+  Branch _FhbhwYtrEei2ApAXrRVVJw at 510,251 size 120,25 {
+  	name "no granted"
+  	-ControlFlow-> _g3iXQYtrEei2ApAXrRVVJw  decorate "" at (0,0) {
+  		id _lvEG4YtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _H-nV4YtrEei2ApAXrRVVJw at 360,590 size 120,90 {
+  	minorPage false
+  	label "RemoveTopic"
+  	libraryComponentUID "_c90QgYtnEeiZQvPf3b5bSg"
+  	ComplexInputPort _H-1YUYtrEei2ApAXrRVVJw at 5,67 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _H-9UIYtrEei2ApAXrRVVJw   {
+  		id _H_DawYtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  }
+  
+  Branch _H-9UIYtrEei2ApAXrRVVJw at 360,700 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _Kute8YtrEei2ApAXrRVVJw  decorate "" at (0,0) {
+  		id _TgPmAYtrEei2ApAXrRVVJw
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _Kute8YtrEei2ApAXrRVVJw at 360,770 size 120,90 {
+  	name "NotificationComponent"
+  	majorPage true
+  	label "NotificationComponent"
+  	libraryComponentUID "_7eKIgFZ4Eee7Rq2yitsHaA"
+  	TextInputStatic _L3E1MYtrEei2ApAXrRVVJw at 5,67 size 110,18 {
+  		name "text"
+  		value "Successfully Remove"
+  	}
+  }
+  
+  GUISIB _g3iXQYtrEei2ApAXrRVVJw at 510,306 size 120,90 {
+  	name "NotificationComponent"
+  	majorPage true
+  	label "NotificationComponent"
+  	libraryComponentUID "_7eKIgFZ4Eee7Rq2yitsHaA"
+  	TextInputStatic _hrx3oItrEei2ApAXrRVVJw at 5,67 size 110,18 {
+  		name "text"
+  		value "Not Allow"
+  	}
+  }
+  
+  GUISIB _WqHpUYwhEeisc9rTAcpAQg at 350,374 size 120,90 {
+  	name "DeleateButtonTopic"
+  	majorPage true
+  	label "DeleateButtonTopic"
+  	libraryComponentUID "_GbYw4IwhEeisc9rTAcpAQg"
+  	ComplexInputPort _WqwigYwhEeisc9rTAcpAQg at 5,67 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  	}
+  	-BranchConnector-> _WrKyMYwhEeisc9rTAcpAQg   {
+  		id _WrMnYYwhEeisc9rTAcpAQg
+  		concurrent true
+  	}
+  }
+  
+  Branch _WrKyMYwhEeisc9rTAcpAQg at 350,490 size 120,50 {
+  	name "Deleate topic"
+  	ComplexOutputPort _WrVKQYwhEeisc9rTAcpAQg at 5,27 size 110,18 {
+  		name "topic"
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		-ComplexDirectDataFlow-> _H-1YUYtrEei2ApAXrRVVJw via (340,526) (340,666) decorate "" at (0,0) {
+  			id _efHPoYwhEeisc9rTAcpAQg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _H-nV4YtrEei2ApAXrRVVJw  decorate "" at (0,0) {
+  		id _b6yRsYwhEeisc9rTAcpAQg
+  		concurrent true
+  	}
+  }
+}
