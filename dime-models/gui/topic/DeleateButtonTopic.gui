@@ -1,0 +1,141 @@
+GUI _GbYw4IwhEeisc9rTAcpAQg {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "DeleateButtonTopic"
+  DataContext _GbqdsYwhEeisc9rTAcpAQg at 10,10 size 200,1000 {
+  	dfViewWorkaround true
+  	ComplexVariable _Kqhq0YwhEeisc9rTAcpAQg at 10,60 size 180,267 {
+  		expanded true
+  		isLive false
+  		isInput true
+  		name "topic"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		ComplexAttribute _LA5jcIwhEeisc9rTAcpAQg at 10,23 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_leJdEDlwEeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _LA9N0YwhEeisc9rTAcpAQg at 10,50 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_ZLhtgDlzEeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _LBARIIwhEeisc9rTAcpAQg at 10,77 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_lqf6MDl0EeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _LBCtYYwhEeisc9rTAcpAQg at 10,104 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_uY6nAFZsEee7Rq2yitsHaA"
+  		}
+  		
+  		PrimitiveAttribute _LBKpMYwhEeisc9rTAcpAQg at 10,131 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_-sIhMC84EeeRkP4audC_CA"
+  		}
+  		
+  		PrimitiveAttribute _LBNsgYwhEeisc9rTAcpAQg at 10,158 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_BdSTYDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _LBTMEYwhEeisc9rTAcpAQg at 10,185 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_CuhRwDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _LBWPYYwhEeisc9rTAcpAQg at 10,212 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_FMZpcDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _LBZSsYwhEeisc9rTAcpAQg at 10,239 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_RvOX4D-xEeerA7ElzRRObA"
+  		}
+  		-AddComplexToSubmission-> _HOg28YwhEeisc9rTAcpAQg  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _M4glUYwhEeisc9rTAcpAQg
+  		}
+  	}
+  }
+  
+  Template _GbuvIYwhEeisc9rTAcpAQg at 260,10 size 270,230 {
+  	blockName "body"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _Gb01wIwhEeisc9rTAcpAQg {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Row _Gb5HMIwhEeisc9rTAcpAQg at 10,30 size 250,170 {
+  		generalStyle GeneralStyling _Gce9EIwhEeisc9rTAcpAQg {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _Gb9YoYwhEeisc9rTAcpAQg at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _Gb-mwYwhEeisc9rTAcpAQg at 2,10 size 14,7 {
+  		}
+  		
+  		Col _GcIXwYwhEeisc9rTAcpAQg at 10,30 size 220,120 {
+  			wideness Full
+  			layout Layout _GcdH4IwhEeisc9rTAcpAQg {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _GcbSsIwhEeisc9rTAcpAQg {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _GcKM8YwhEeisc9rTAcpAQg at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _GcPFcYwhEeisc9rTAcpAQg at 10,2 size 7,14 {
+  			}
+  			
+  			Button _HOg28YwhEeisc9rTAcpAQg at 10,30 size 200,60 {
+  				displayLabel ""
+  				disabled false
+  				label "Deleate topic"
+  				generalStyle GeneralStyling _HOg29owhEeisc9rTAcpAQg {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				styling ButtonStyling _HOg294whEeisc9rTAcpAQg {
+  						fullWidth false
+  						color Default
+  						size Default
+  						disabled false
+  					}
+  				icon Icon _HOg2-IwhEeisc9rTAcpAQg {
+  						postIcon None
+  						preIcon None
+  					}
+  				options ButtonOptions _HOheAIwhEeisc9rTAcpAQg {
+  						isLink false
+  						submitsForm true
+  					}
+  				MoveUp _HOheAowhEeisc9rTAcpAQg at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _HOheBYwhEeisc9rTAcpAQg at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  }
+}

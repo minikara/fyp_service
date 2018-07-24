@@ -85,6 +85,14 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   		-ComplexRead-> _EQNg4Ic1EeeAgbRwtNDv9w  decorate "Polyline" at (2,0) {
   			id _HODLAIc1EeeAgbRwtNDv9w
   		}
+  		
+  		-ComplexRead-> _ojqdwYwhEeisc9rTAcpAQg  decorate "" at (0,0) {
+  			id _sEtioYwhEeisc9rTAcpAQg
+  		}
+  		
+  		-ComplexRead-> _p5XscYwhEeisc9rTAcpAQg  decorate "" at (0,0) {
+  			id _ux4TgYwhEeisc9rTAcpAQg
+  		}
   	}
   	
   	ComplexVariable _ssig4FAuEeeWJL1zKR4q1g at 20,300 size 160,105 {
@@ -112,6 +120,14 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   		-ComplexRead-> _64gdAFECEee1RdmfVpvmFg  decorate "Polyline" at (2,0) {
   			id _e3DQYFAxEeeWJL1zKR4q1g
   		}
+  		
+  		-ComplexRead-> _ojCysYwhEeisc9rTAcpAQg  decorate "" at (0,0) {
+  			id _w8TjsYwhEeisc9rTAcpAQg
+  		}
+  		
+  		-ComplexRead-> _p58UMYwhEeisc9rTAcpAQg  decorate "" at (0,0) {
+  			id _ygUUIYwhEeisc9rTAcpAQg
+  		}
   	}
   	
   	ComplexVariable _MoAsoFpvEeeWOuVOeqZZPQ at 20,950 size 160,25 index 0 {
@@ -124,7 +140,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
   		-IS-> _mHp3IFpsEeeWOuVOeqZZPQ  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
   			id _zaoPcFp0EeeWOuVOeqZZPQ
-  			exactMatch false
+  			exactMatch true
   			negate false
   			matchingType "_eWeFMDlvEeelR78gw15slQ"
   		}
@@ -135,7 +151,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   		
   		-IS-> _X1ve0HzpEeeXTvzoCY4ZIA  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
   			id _joeqsIZ5EeepCdvwOIQIEA
-  			exactMatch false
+  			exactMatch true
   			negate false
   			matchingType "_QCBvMDlvEeelR78gw15slQ"
   		}
@@ -146,17 +162,17 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   	}
   }
   
-  Template _TtrR0EqXEeeP2Ykw7b8TLw at 260,10 size 420,2372 {
+  Template _TtrR0EqXEeeP2Ykw7b8TLw at 260,10 size 420,2676 {
   	blockName "body"
   	disableAutoLayout false
-  	generalStyle GeneralStyling _GjjrhXq0EeiJdqsti47xBA {
+  	generalStyle GeneralStyling _wmTaYYtkEeiHXN7GX-Yi5A {
   			tallness Fitting
   			marginBottom None
   			attributes [  ]
   			marginTop None
   		}
-  	Row _Tt1p4EqXEeeP2Ykw7b8TLw at 10,30 size 400,2312 {
-  		generalStyle GeneralStyling _Gjjrh3q0EeiJdqsti47xBA {
+  	Row _Tt1p4EqXEeeP2Ykw7b8TLw at 10,30 size 400,2616 {
+  		generalStyle GeneralStyling _wmTaY4tkEeiHXN7GX-Yi5A {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
@@ -168,14 +184,14 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   		MoveDown _Tt7JcEqXEeeP2Ykw7b8TLw at 2,10 size 14,7 {
   		}
   		
-  		Col _TuDFQEqXEeeP2Ykw7b8TLw at 10,30 size 370,2262 {
+  		Col _TuDFQEqXEeeP2Ykw7b8TLw at 10,30 size 370,2566 {
   			wideness Full
-  			layout Layout _GjjriXq0EeiJdqsti47xBA {
+  			layout Layout _wmTaZYtkEeiHXN7GX-Yi5A {
   					size Default
   					offset None
   					alignment Left
   				}
-  			generalStyle GeneralStyling _GjkSkHq0EeiJdqsti47xBA {
+  			generalStyle GeneralStyling _wmTaZ4tkEeiHXN7GX-Yi5A {
   					tallness Fitting
   					marginBottom None
   					attributes [  ]
@@ -188,7 +204,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _WIlIMFTCEeePxP3KypW2eA at 10,720 size 250,170 {
-  				generalStyle GeneralStyling _GjkSknq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmTaaYtkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -202,12 +218,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _WJFegFTCEeePxP3KypW2eA at 10,30 size 220,120 {
   					wideness Full
-  					layout Layout _GjkSlHq0EeiJdqsti47xBA {
+  					layout Layout _wmUBcYtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjkSlnq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmUBc4tkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -220,18 +236,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					}
   					
   					Text _DIZPsEqZEeeP2Ykw7b8TLw at 10,30 size 200,60 {
-  						generalStyle GeneralStyling _Gjk5oXq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmUBeYtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _GjkSmnq0EeiJdqsti47xBA {
+  						content [ StaticContent _wmUBd4tkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "{{topic.keywords}}"
-  								styling TextStyling _GjkSmHq0EeiJdqsti47xBA {
+  								styling TextStyling _wmUBdYtkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -252,7 +268,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _ekMpoFTCEeePxP3KypW2eA at 10,1390 size 200,268 {
-  				generalStyle GeneralStyling _Gjk5o3q0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmUogYtkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -266,12 +282,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _ekeWcFTCEeePxP3KypW2eA at 10,30 size 170,218 {
   					wideness Full
-  					layout Layout _Gjk5pXq0EeiJdqsti47xBA {
+  					layout Layout _wmUog4tkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _Gjk5p3q0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmUohYtkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -286,7 +302,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					InteractionSIB _64bkgFECEee1RdmfVpvmFg at 10,30 size 150,158 {
   						label "DisplaySupervisorComponent"
   						libraryComponentUID "_R3_Y8FAxEeeWJL1zKR4q1g"
-  						generalStyle GeneralStyling _Gjk5qXq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmUoh4tkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
@@ -317,7 +333,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _f0z88FTCEeePxP3KypW2eA at 10,370 size 250,170 {
-  				generalStyle GeneralStyling _GjlgsXq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmVPkYtkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -331,12 +347,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _f1DNgFTCEeePxP3KypW2eA at 10,30 size 220,120 {
   					wideness Full
-  					layout Layout _Gjlgs3q0EeiJdqsti47xBA {
+  					layout Layout _wmV2oYtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjlgtXq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmV2o4tkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -349,18 +365,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					}
   					
   					Text _8ojecEqYEeeP2Ykw7b8TLw at 10,30 size 200,60 {
-  						generalStyle GeneralStyling _Gjlgu3q0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmV2qYtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _GjlguXq0EeiJdqsti47xBA {
+  						content [ StaticContent _wmV2p4tkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "{{topic.abstract}}"
-  								styling TextStyling _Gjlgt3q0EeiJdqsti47xBA {
+  								styling TextStyling _wmV2pYtkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -381,7 +397,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _jofp8FTCEeePxP3KypW2eA at 10,30 size 350,160 {
-  				generalStyle GeneralStyling _GjmHwXq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmWdsYtkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -395,12 +411,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _jotsYFTCEeePxP3KypW2eA at 10,30 size 320,110 {
   					wideness Full
-  					layout Layout _GjmHw3q0EeiJdqsti47xBA {
+  					layout Layout _wmWds4tkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjmHxXq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmWdtYtkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -414,18 +430,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					
   					Headline _m2m1EEqYEeeP2Ykw7b8TLw at 10,30 size 300,50 {
   						size Normal
-  						generalStyle GeneralStyling _GjmHy3q0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmXExYtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _GjmHyXq0EeiJdqsti47xBA {
+  						content [ StaticContent _wmXEw4tkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "{{topic.title}}"
-  								styling TextStyling _GjmHx3q0EeiJdqsti47xBA {
+  								styling TextStyling _wmXEwYtkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -446,7 +462,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _R_WMgFTDEeePxP3KypW2eA at 10,200 size 350,160 {
-  				generalStyle GeneralStyling _Gjmu0Xq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmXEx4tkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -460,12 +476,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _R_mrMFTDEeePxP3KypW2eA at 10,30 size 320,110 {
   					wideness Full
-  					layout Layout _Gjmu03q0EeiJdqsti47xBA {
+  					layout Layout _wmXEyYtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _Gjmu1Xq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmXEy4tkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -479,18 +495,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					
   					Headline _UhMeMFTDEeePxP3KypW2eA at 10,30 size 300,50 {
   						size Small
-  						generalStyle GeneralStyling _Gjmu23q0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmXr1YtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _Gjmu2Xq0EeiJdqsti47xBA {
+  						content [ StaticContent _wmXr04tkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "Topic description\n"
-  								styling TextStyling _Gjmu13q0EeiJdqsti47xBA {
+  								styling TextStyling _wmXr0YtkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -511,7 +527,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _bY8ZIFTDEeePxP3KypW2eA at 10,550 size 350,160 {
-  				generalStyle GeneralStyling _Gjmu3Xq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmXr14tkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -525,12 +541,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _bZLpsFTDEeePxP3KypW2eA at 10,30 size 320,110 {
   					wideness Full
-  					layout Layout _Gjmu33q0EeiJdqsti47xBA {
+  					layout Layout _wmXr2YtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjnV4Xq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmXr24tkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -544,18 +560,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					
   					Headline _cQoPEFTDEeePxP3KypW2eA at 10,30 size 300,50 {
   						size Small
-  						generalStyle GeneralStyling _GjnV53q0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmYS5YtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _GjnV5Xq0EeiJdqsti47xBA {
+  						content [ StaticContent _wmYS44tkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "Keywords"
-  								styling TextStyling _GjnV43q0EeiJdqsti47xBA {
+  								styling TextStyling _wmYS4YtkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -576,7 +592,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _IruIMFTHEeePxP3KypW2eA at 10,1220 size 350,160 {
-  				generalStyle GeneralStyling _GjnV6Xq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmYS54tkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -590,12 +606,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _IsMCQFTHEeePxP3KypW2eA at 10,30 size 320,110 {
   					wideness Full
-  					layout Layout _GjnV63q0EeiJdqsti47xBA {
+  					layout Layout _wmY58ItkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjnV7Xq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmY58otkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -609,18 +625,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					
   					Headline _KTIx8FTHEeePxP3KypW2eA at 10,30 size 300,50 {
   						size Small
-  						generalStyle GeneralStyling _Gjn89Xq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmY5-ItkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						content [ StaticContent _Gjn883q0EeiJdqsti47xBA {
+  						content [ StaticContent _wmY59otkEeiHXN7GX-Yi5A {
   								renderMarkdown false
   								maxChars 0
   								html false
   								rawContent "Submitter"
-  								styling TextStyling _Gjn88Xq0EeiJdqsti47xBA {
+  								styling TextStyling _wmY59ItkEeiHXN7GX-Yi5A {
   										small false
   										highlight false
   										deleted false
@@ -641,7 +657,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _mHp3IFpsEeeWOuVOeqZZPQ at 10,1668 size 200,236 index 10 {
-  				generalStyle GeneralStyling _Gjn893q0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmY5-otkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -655,12 +671,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _mH684FpsEeeWOuVOeqZZPQ at 10,30 size 170,186 {
   					wideness Full
-  					layout Layout _Gjn8-Xq0EeiJdqsti47xBA {
+  					layout Layout _wmZhAYtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _Gjn8-3q0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmZhA4tkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -675,7 +691,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					InteractionSIB _XRzccINZEee8TuGtVfpUMA at 10,30 size 150,126 {
   						label "BiddingComponent"
   						libraryComponentUID "_YBCrUFWWEee9Kul9j01mzQ"
-  						generalStyle GeneralStyling _Gjn8_Xq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmZhBYtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
@@ -709,7 +725,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _X1ve0HzpEeeXTvzoCY4ZIA at 10,1914 size 200,318 index 9 {
-  				generalStyle GeneralStyling _GjokAHq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmZhB4tkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -723,12 +739,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _X2JugHzpEeeXTvzoCY4ZIA at 10,30 size 170,268 {
   					wideness Full
-  					layout Layout _GjokAnq0EeiJdqsti47xBA {
+  					layout Layout _wmZhCYtkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjokBHq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmaIEYtkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -743,7 +759,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					InteractionSIB _RWyLEIZwEeepCdvwOIQIEA at 10,30 size 150,108 {
   						label "ManageAssignmentButton"
   						libraryComponentUID "_GsRoAHzfEeeXTvzoCY4ZIA"
-  						generalStyle GeneralStyling _GjokBnq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmaIE4tkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
@@ -771,7 +787,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					GUISIB _tEaTQIZxEeepCdvwOIQIEA at 10,148 size 150,90 {
   						label "SuccessfulAssignment"
   						libraryComponentUID "_ejYg0H3AEeebT4zH69gJHQ"
-  						generalStyle GeneralStyling _GjokCHq0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmaIFYtkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
@@ -793,7 +809,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   			}
   			
   			Row _0oIOMIczEeeAgbRwtNDv9w at 10,900 size 220,310 {
-  				generalStyle GeneralStyling _GjpLEXq0EeiJdqsti47xBA {
+  				generalStyle GeneralStyling _wmbWMYtkEeiHXN7GX-Yi5A {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
@@ -807,12 +823,12 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   				
   				Col _0onWYIczEeeAgbRwtNDv9w at 10,30 size 190,260 {
   					wideness Full
-  					layout Layout _GjpLE3q0EeiJdqsti47xBA {
+  					layout Layout _wmbWM4tkEeiHXN7GX-Yi5A {
   							size Default
   							offset None
   							alignment Left
   						}
-  					generalStyle GeneralStyling _GjpLFXq0EeiJdqsti47xBA {
+  					generalStyle GeneralStyling _wmbWNYtkEeiHXN7GX-Yi5A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
@@ -827,18 +843,18 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   					File _35454IczEeeAgbRwtNDv9w at 10,30 size 170,200 {
   						disabled false
   						label "Download file"
-  						generalStyle GeneralStyling _GjpLG3q0EeiJdqsti47xBA {
+  						generalStyle GeneralStyling _wmb9QotkEeiHXN7GX-Yi5A {
   								tallness Fitting
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						styling FormFieldStyling _GjpLF3q0EeiJdqsti47xBA {
+  						styling FormFieldStyling _wmbWN4tkEeiHXN7GX-Yi5A {
   								color Default
   								size Default
   								disabled false
   							}
-  						icon Icon _GjpLGXq0EeiJdqsti47xBA {
+  						icon Icon _wmb9QItkEeiHXN7GX-Yi5A {
   								postIcon None
   								preIcon Download
   							}
@@ -852,7 +868,7 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   							name "downloadTopicFile"
   							label "downloadTopicFile"
   							libraryComponentUID "_wn_kIIc0EeeAgbRwtNDv9w"
-  							generalStyle GeneralStyling _GjpyIXq0EeiJdqsti47xBA {
+  							generalStyle GeneralStyling _wmckUYtkEeiHXN7GX-Yi5A {
   									tallness Fitting
   									marginBottom None
   									attributes [  ]
@@ -871,6 +887,71 @@ GUI _TtPM8EqXEeeP2Ykw7b8TLw {
   							}
   						}
   					}
+  				}
+  			}
+  			
+  			InteractionSIB _oiTL0YwhEeisc9rTAcpAQg at 10,2242 size 150,176 {
+  				label "EdditTopicButton"
+  				libraryComponentUID "_KrHvgYjmEeiiyeL2lGfv2g"
+  				generalStyle GeneralStyling _okzGMIwhEeisc9rTAcpAQg {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				ComplexInputPort _ojCysYwhEeisc9rTAcpAQg at 5,67 size 90,18 {
+  					name "user"
+  					isList false
+  					libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  				}
+  				
+  				ComplexInputPort _ojqdwYwhEeisc9rTAcpAQg at 5,85 size 90,18 {
+  					name "topicToBeEddit"
+  					isList false
+  					libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  				}
+  				
+  				Branch _oj9_wYwhEeisc9rTAcpAQg at 5,108 size 100,50 {
+  					name "success"
+  					ComplexOutputPort _okNQUYwhEeisc9rTAcpAQg at 5,27 size 90,18 {
+  						name "topic"
+  						isList false
+  						libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  					}
+  				}
+  				
+  				MoveUp _okvb0YwhEeisc9rTAcpAQg at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _okwC4YwhEeisc9rTAcpAQg at 2,10 size 14,7 {
+  				}
+  			}
+  			
+  			InteractionSIB _p4vaUYwhEeisc9rTAcpAQg at 10,2428 size 150,108 {
+  				label "SupervisorRemoveTopic"
+  				libraryComponentUID "_-3eyQYtqEei2ApAXrRVVJw"
+  				generalStyle GeneralStyling _p6mbgIwhEeisc9rTAcpAQg {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				ComplexInputPort _p5XscYwhEeisc9rTAcpAQg at 5,67 size 90,18 {
+  					name "topic"
+  					isList false
+  					libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  				}
+  				
+  				ComplexInputPort _p58UMYwhEeisc9rTAcpAQg at 5,85 size 90,18 {
+  					name "concreteuser"
+  					isList false
+  					libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  				}
+  				
+  				MoveUp _p6j_QYwhEeisc9rTAcpAQg at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _p6kmUYwhEeisc9rTAcpAQg at 2,10 size 14,7 {
   				}
   			}
   		}

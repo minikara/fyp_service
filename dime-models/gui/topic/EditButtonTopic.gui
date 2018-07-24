@@ -1,0 +1,141 @@
+GUI _gMT2gYjaEeiiyeL2lGfv2g {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "EditButtonTopic"
+  DataContext _gMYvAYjaEeiiyeL2lGfv2g at 10,10 size 200,1000 {
+  	dfViewWorkaround true
+  	ComplexVariable _stZYgYjaEeiiyeL2lGfv2g at 10,50 size 180,267 {
+  		expanded true
+  		isLive false
+  		isInput true
+  		name "topic"
+  		dfViewWorkaround true
+  		isList false
+  		libraryComponentUID "_k5NVsC84EeeRkP4audC_CA"
+  		ComplexAttribute _tiIBEYjaEeiiyeL2lGfv2g at 10,23 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_leJdEDlwEeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _tiKdUYjaEeiiyeL2lGfv2g at 10,50 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_ZLhtgDlzEeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _tiTnQYjaEeiiyeL2lGfv2g at 10,77 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_lqf6MDl0EeelR78gw15slQ"
+  		}
+  		
+  		ComplexAttribute _tiWDgYjaEeiiyeL2lGfv2g at 10,104 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_uY6nAFZsEee7Rq2yitsHaA"
+  		}
+  		
+  		PrimitiveAttribute _tiWqkYjaEeiiyeL2lGfv2g at 10,131 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_-sIhMC84EeeRkP4audC_CA"
+  		}
+  		
+  		PrimitiveAttribute _ticxMYjaEeiiyeL2lGfv2g at 10,158 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_BdSTYDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _tid_UYjaEeiiyeL2lGfv2g at 10,185 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_CuhRwDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _tifNcYjaEeiiyeL2lGfv2g at 10,212 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_FMZpcDlvEeelR78gw15slQ"
+  		}
+  		
+  		PrimitiveAttribute _tilUEYjaEeiiyeL2lGfv2g at 10,239 size 160,25 {
+  			isLive false
+  			libraryComponentUID "_RvOX4D-xEeerA7ElzRRObA"
+  		}
+  		-AddComplexToSubmission-> _1reGwYjaEeiiyeL2lGfv2g  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _-naHAYjaEeiiyeL2lGfv2g
+  		}
+  	}
+  }
+  
+  Template _gMbLQYjaEeiiyeL2lGfv2g at 280,30 size 270,230 {
+  	blockName "body"
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _gMp0wIjaEeiiyeL2lGfv2g {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Row _gMrp8YjaEeiiyeL2lGfv2g at 10,30 size 250,170 {
+  		generalStyle GeneralStyling _gM7hkIjaEeiiyeL2lGfv2g {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _gMuGMYjaEeiiyeL2lGfv2g at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _gMutQYjaEeiiyeL2lGfv2g at 2,10 size 14,7 {
+  		}
+  		
+  		Col _gMyXoYjaEeiiyeL2lGfv2g at 10,30 size 220,120 {
+  			wideness Full
+  			layout Layout _gM66gIjaEeiiyeL2lGfv2g {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _gM5sYIjaEeiiyeL2lGfv2g {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _gM1a8YjaEeiiyeL2lGfv2g at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _gM33MYjaEeiiyeL2lGfv2g at 10,2 size 7,14 {
+  			}
+  			
+  			Button _1reGwYjaEeiiyeL2lGfv2g at 10,30 size 200,60 {
+  				displayLabel ""
+  				disabled false
+  				label "Edit topic"
+  				generalStyle GeneralStyling _1ret0IjaEeiiyeL2lGfv2g {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				styling ButtonStyling _1ret0YjaEeiiyeL2lGfv2g {
+  						fullWidth false
+  						color Default
+  						size Default
+  						disabled false
+  					}
+  				icon Icon _1ret0ojaEeiiyeL2lGfv2g {
+  						postIcon None
+  						preIcon None
+  					}
+  				options ButtonOptions _1ret04jaEeiiyeL2lGfv2g {
+  						isLink false
+  						submitsForm true
+  					}
+  				MoveUp _1ret1YjaEeiiyeL2lGfv2g at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _1ret2IjaEeiiyeL2lGfv2g at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  }
+}
